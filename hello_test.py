@@ -1,34 +1,45 @@
+import this
+
+#test presentation
+
 print("Test")
 
-message = "Soy un test"
+testMessage = "Soy un test"
 
-print(message)
+print(testMessage)
 
-feedback = "De acuerdo. Que tipo de Test?"
+#tester feedback
 
-print(feedback)
+testerFeedback = "De acuerdo. Que tipo de Test?"
 
-message = "Smoke"
+print(testerFeedback)
 
-print(message)
+testMessage = "Smoke"
 
-feedback = "Como te llamas?"
+print(testMessage)
 
-print(feedback)
+testerFeedback = "Como te llamas?"
 
-message = (" Smoke Test' ")
-meessageCheckSpace = message.rstrip()
+print(testerFeedback)
 
-print (message.title())
+testMessage = (" Smoke Test' ")
+testMessageCheckSpace = testMessage.rstrip()
 
-print (meessageCheckSpace.upper())
+print (testMessage.title())
 
-meessageCheckSpace = meessageCheckSpace.strip()
+print (testMessageCheckSpace.upper())
 
-print (meessageCheckSpace.lower())
+testMessageCheckSpace = testMessageCheckSpace.strip()
 
-thank = "merci, "
+print (testMessageCheckSpace.lower())
 
-final = f"{thank}{meessageCheckSpace}"
+#test count and thank words
+
+TEST_COUNT, testerThank = 3 ** 3, "merci, "
+
+#final words to close
+
+final = f"{testerThank}{testMessageCheckSpace} {TEST_COUNT}'s"
 
 print(f"\tMuy bien, {final.title()}, \n\tnext!")
+
