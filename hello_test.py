@@ -16,15 +16,19 @@ feedback = "Como te llamas?"
 
 print(feedback)
 
-message = ("Smoke Test")
+message = (" Smoke Test' ")
+meessageCheckSpace = message.rstrip()
 
 print (message.title())
 
-print (message.upper())
-print (message.lower())
+print (meessageCheckSpace.upper())
+
+meessageCheckSpace = meessageCheckSpace.strip()
+
+print (meessageCheckSpace.lower())
 
 thank = "merci, "
 
-final = f"{thank}{message}"
+final = f"{thank}{meessageCheckSpace}"
 
 print(f"\tMuy bien, {final.title()}, \n\tnext!")
