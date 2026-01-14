@@ -64,3 +64,12 @@ for test in testRepo.tests:
 test = testRepo.tests.pop(0)
 
 print(test)
+
+#numeric list
+
+numbers = []
+
+for number in range (1, 11):
+    numbers.append(number)
+
+print(numbers)
