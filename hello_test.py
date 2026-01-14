@@ -43,3 +43,74 @@ final = f"{testerThank}{testMessageCheckSpace} {TEST_COUNT}'s"
 
 print(f"\tMuy bien, {final.title()}, \n\tnext!")
 
+tests = []
+
+tests = ["login", "registration", "auth", "view profile", "edit profile", 
+    "delete account", "send message", "read message", "skip message", "attach media", 
+    "view contact", "edit contact", "delete contact", 
+    "checkin", "checkout", "jump", "like", "dislike", 
+    "set status", "delete status", "view status", 
+    "view checkins", "delete checkin", "reset status history", "search locations", 
+    "mark locations", "view settings"]
+
+print(tests)
+    
+tests.insert(2, "email recovery")
+
+print(tests)
+
+print(tests[2])
+
+del tests[2]
+
+print(tests[2])
+print(tests[2].title())
+print(tests[-1])
+
+testerFeedback = f"Quiuero ejecutar {tests[0].title()}"
+
+print (testerFeedback)
+
+done = tests.pop(0)
+
+testerFeedback = f"Se ha ejecutado {done.title()}"
+
+print (testerFeedback)
+
+tests[0]= 1
+
+tests.append("view chats")
+
+TEST_COUNT = (3 ** 3) + 2
+
+testerFeedback = f"Quiuero ejecutar {tests[26]}"
+
+done = tests.pop(26)
+
+testerFeedback = f"Se ha ejecutado {done.title()}"
+
+print (testerFeedback)
+
+print (TEST_COUNT)
+
+print(tests)
+
+processTest = tests.pop()
+
+TEST_COUNT = (3 ** 3) + 1
+
+print (TEST_COUNT)
+
+print(processTest)
+
+print(tests)
+
+processTest = tests.pop(0)
+
+print(processTest)
+
+TEST_COUNT = 3 ** 3
+
+print (TEST_COUNT)
+
+print(tests)
