@@ -61,9 +61,9 @@ testRepo.tests.reverse()
 for test in testRepo.tests:
     print(f"{test.title()} Test")
     
-test = testRepo.tests.pop(0)
+#test = testRepo.tests.pop(0)
 
-print(test)
+#print(test)
 
 #numeric list
 
@@ -73,3 +73,33 @@ for number in range (1, 11):
     numbers.append(number)
 
 print(numbers)
+
+numbers2 = list(range(1, 11))
+print(numbers2)
+
+squares = []
+
+for value in numbers2[:3]:
+    squares.append(value ** 2)
+
+print(min(squares))
+print(max(squares))
+print(sum(squares))
+
+
+halfs = [value / 2 for value in range(2,11)]
+print(halfs)
+
+# if else
+
+nextExecution = []
+
+for test in testRepo.tests:
+    if test != "login":
+        print(f"{test.title()} function is covered")    
+    else:
+        nextExecution.append(test)
+        print(f"{test.title()} will be executed")
+    
+print(nextExecution)
+    
