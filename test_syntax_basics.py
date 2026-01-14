@@ -1,14 +1,14 @@
+#basic syntax checks
+
 import this
 
-#test presentation
+#test variables edition
 
 print("Test")
 
 testMessage = "Soy un test"
 
 print(testMessage)
-
-#tester feedback
 
 testerFeedback = "De acuerdo. Que tipo de Test?"
 
@@ -33,11 +33,11 @@ testMessageCheckSpace = testMessageCheckSpace.strip()
 
 print (testMessageCheckSpace.lower())
 
-#test count and thank words
+#test calc and num operation
 
 TEST_COUNT, testerThank = 3 ** 3, "merci, "
 
-#final words to close
+#test string format
 
 final = f"{testerThank}{testMessageCheckSpace} {TEST_COUNT}'s"
 
@@ -114,3 +114,21 @@ processTest = tests.pop(0)
 print(processTest)
 
 print(tests)
+
+#test list sort
+
+print(sorted(tests))
+
+print(sorted(tests, reverse = True))
+
+tests.reverse()
+
+print(tests)
+
+tests.reverse()
+
+print(tests)
+
+# test list size
+
+print(len(tests))
