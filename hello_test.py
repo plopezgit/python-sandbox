@@ -43,7 +43,11 @@ final = f"{testerThank}{testMessageCheckSpace} {TEST_COUNT}'s"
 
 print(f"\tMuy bien, {final.title()}, \n\tnext!")
 
+#test list creation
+
 tests = []
+
+#test list fullfil
 
 tests = ["login", "registration", "auth", "view profile", "edit profile", 
     "delete account", "send message", "read message", "skip message", "attach media", 
@@ -54,12 +58,16 @@ tests = ["login", "registration", "auth", "view profile", "edit profile",
     "mark locations", "view settings"]
 
 print(tests)
+
+#test list insert
     
 tests.insert(2, "email recovery")
 
 print(tests)
 
 print(tests[2])
+
+#test list delete
 
 del tests[2]
 
@@ -71,6 +79,8 @@ testerFeedback = f"Quiuero ejecutar {tests[0].title()}"
 
 print (testerFeedback)
 
+#test list pop
+
 done = tests.pop(0)
 
 testerFeedback = f"Se ha ejecutado {done.title()}"
@@ -79,9 +89,9 @@ print (testerFeedback)
 
 tests[0]= 1
 
-tests.append("view chats")
+#test list append
 
-TEST_COUNT = (3 ** 3) + 2
+tests.append("view chats")
 
 testerFeedback = f"Quiuero ejecutar {tests[26]}"
 
@@ -91,15 +101,9 @@ testerFeedback = f"Se ha ejecutado {done.title()}"
 
 print (testerFeedback)
 
-print (TEST_COUNT)
-
 print(tests)
 
 processTest = tests.pop()
-
-TEST_COUNT = (3 ** 3) + 1
-
-print (TEST_COUNT)
 
 print(processTest)
 
@@ -108,9 +112,5 @@ print(tests)
 processTest = tests.pop(0)
 
 print(processTest)
-
-TEST_COUNT = 3 ** 3
-
-print (TEST_COUNT)
 
 print(tests)
